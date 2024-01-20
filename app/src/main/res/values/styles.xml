@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Pengaturan tema Anda bisa ditambahkan di sini -->
+    </style>
+
+    <style name="CustomButtonStyle">
+        <!-- Atur warna latar belakang (background color) -->
+        <item name="android:background">@color/button_biru</item>
+        <!-- Atur warna teks (text color) -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

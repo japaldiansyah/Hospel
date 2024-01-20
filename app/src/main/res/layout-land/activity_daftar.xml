@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#91D8E1"
+        tools:context=".Daftar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bgawan"
+            android:layout_alignParentTop="true">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/kota">
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="25dp"
+            android:id="@+id/logo_hotel_daftar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_apk"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/nama_hotel_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredom"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/logo_hotel_daftar"
+            android:textSize="50sp"
+            android:text="HOSPEL"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/rounded_nama_daftar"
+            android:background="@drawable/bg_rounded_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/nama_hotel_daftar"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/nama_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPersonName"
+                android:hint="Nama Lengkap..."
+                android:textColor="#968787"
+                android:textStyle="italic"
+                tools:ignore="ExtraText,TouchTargetSizeCheck" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pk_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Masukkan email dengan benar!"
+            android:textColor="#F44336"
+            android:visibility="invisible"
+            android:layout_below="@id/rounded_nama_daftar"/>
+
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/rounded_email_daftar"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rounded_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rounded_nama_daftar"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/email_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email..."
+                android:textColor="#968787"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pk_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Masukkan email dengan benar!"
+            android:textColor="#F44336"
+            android:visibility="invisible"
+            android:layout_below="@id/rounded_email_daftar"/>
+
+        <RelativeLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/rounded_password_daftar"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rounded_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rounded_email_daftar"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/password_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:textColor="#968787"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/pk_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Masukkan password dengan benar!"
+            android:textColor="#F44336"
+            android:visibility="invisible"
+            android:layout_below="@id/rounded_password_daftar"/>
+
+        <RelativeLayout
+            android:id="@+id/syarat"
+            android:layout_below="@id/rounded_password_daftar"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/saya_setuju_dengan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Saya setuju dengan"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/syarat_dan_ketentuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Syarat dan Ketentuan"
+                android:layout_toRightOf="@+id/saya_setuju_dengan"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/cb_daftar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@id/syarat_dan_ketentuan"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kelogin"
+            android:layout_below="@id/syarat"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sudah_punya_akun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Sudah punya akun?"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_toRightOf="@+id/sudah_punya_akun"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_daftar"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/kelogin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_green"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

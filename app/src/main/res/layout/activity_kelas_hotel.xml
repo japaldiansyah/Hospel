@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91D8E1"
+    tools:context=".KelasHotel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bgawan"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/kota">
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/back_kelas_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_ic"/>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas Hotel"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/fredom"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/kelas_ekonomi"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:elevation="4dp"
+        android:layout_below="@+id/back_kelas_hotel">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_text">
+            
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gambar_kelas_ekonomi"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/gambar_ekonomi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/gambar_kelas_ekonomi"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/teks_kelas_ekonomi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas Ekonomi"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="20sp"/>
+                <View
+                    android:id="@+id/divider_kelas_ekonomi"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#000000"
+                    android:layout_below="@id/teks_kelas_ekonomi"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/divider_kelas_ekonomi"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/button_biru">
+
+                    <ImageView
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_ekonomi_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_ekonomi_2"
+                        android:layout_toRightOf="@+id/bintang_kelas_ekonomi_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/bintang"/>
+                    <TextView
+                        android:id="@+id/harga_ekonomi"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/bintang_kelas_ekonomi_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 250,000 / Malam"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersisa 5 kamar"
+                        android:layout_below="@id/harga_ekonomi"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kelas_menengah"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:elevation="4dp"
+        android:layout_marginStart="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/kelas_ekonomi">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_text">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gambar_kelas_menengah"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/gambar_menengah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/gambar_kelas_menengah"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/teks_kelas_menengah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas Menengah"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:id="@+id/divider_kelas_menengah"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#000000"
+                    android:layout_below="@id/teks_kelas_menengah"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/divider_kelas_menengah"
+                    android:background="@color/button_biru"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_menangah_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_menengah_2"
+                        android:layout_toRightOf="@+id/bintang_kelas_menangah_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_menengah_3"
+                        android:layout_toRightOf="@+id/bintang_kelas_menengah_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/harga_menengah"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/bintang_kelas_menangah_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 500,000 / Malam"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersisa 3 kamar"
+                        android:layout_below="@id/harga_menengah"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kelas_premium"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:elevation="4dp"
+        android:layout_below="@+id/kelas_menengah">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_text">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gambar_kelas_premium"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/gambar_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/gambar_kelas_premium"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/teks_kelas_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas Premium"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:id="@+id/divider_kelas_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#000000"
+                    android:layout_below="@id/teks_kelas_premium"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/button_biru"
+                    android:layout_below="@id/divider_kelas_premium"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_premium_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_premium_2"
+                        android:layout_toRightOf="@+id/bintang_kelas_premium_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/bintang_kelas_premium_3"
+                        android:layout_toRightOf="@+id/bintang_kelas_premium_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/bintang_kelas_premium_4"
+                        android:layout_toRightOf="@+id/bintang_kelas_premium_3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <TextView
+                        android:id="@+id/harga_premium"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/bintang_kelas_premium_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 1.000,000 / Malam"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersisa 7 kamar"
+                        android:layout_below="@id/harga_premium"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kelas_eksklusif"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:elevation="4dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/kelas_premium">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_text">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gambar_kelas_eksklusif"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/gambar_eksklusif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/gambar_kelas_eksklusif"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/teks_kelas_eksklusif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas Eksklusif"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dm_sans"
+                    android:textSize="20sp"/>
+                <View
+                    android:id="@+id/divider_kelas_eksklusif"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#000000"
+                    android:layout_below="@id/teks_kelas_eksklusif"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/button_biru"
+                    android:layout_below="@id/divider_kelas_eksklusif"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_eksklusif_1"
+                        android:layout_width="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_eksklusif_2"
+                        android:layout_toRightOf="@+id/bintang_kelas_eksklusif_1"
+                        android:layout_width="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_eksklusif_3"
+                        android:layout_toRightOf="@+id/bintang_kelas_eksklusif_2"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_eksklusif_4"
+                        android:layout_toRightOf="@+id/bintang_kelas_eksklusif_3"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/bintang_kelas_eksklusif_5"
+                        android:layout_toRightOf="@+id/bintang_kelas_eksklusif_4"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bintang"/>
+                    <TextView
+                        android:id="@+id/harga_eksklusif"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/bintang_kelas_eksklusif_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 1.500,000 / Malam"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersisa 8 kamar"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@id/harga_eksklusif"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

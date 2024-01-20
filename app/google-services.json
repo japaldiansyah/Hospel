@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1093624487520",
+    "firebase_url": "https://tugastmr-default-rtdb.firebaseio.com",
+    "project_id": "tugastmr",
+    "storage_bucket": "tugastmr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093624487520:android:66f8674743f1087360ed05",
+        "android_client_info": {
+          "package_name": "com.example.hospel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093624487520-kg2jtdv8jmkii3f3s01gpga46ql58con.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hospel",
+            "certificate_hash": "2bce83323c3e7305a6110779c5baf3af1d7a3557"
+          }
+        },
+        {
+          "client_id": "1093624487520-tef4khqst1oarkopjl9q73e3qccgllnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASASgm2ZJvNFwHo3gcP0FMclmSCJvEe14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093624487520-tef4khqst1oarkopjl9q73e3qccgllnq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

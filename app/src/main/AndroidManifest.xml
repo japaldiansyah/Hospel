@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_apk"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_apk"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".Reservasi"
+            android:exported="false" />
+        <activity
+            android:name=".BookingKamar4"
+            android:exported="false" />
+        <activity
+            android:name=".BookingKamar3"
+            android:exported="false" />
+        <activity
+            android:name=".BookingKamar2"
+            android:exported="false" />
+        <activity
+            android:name=".BookingKamar"
+            android:exported="false" />
+        <activity
+            android:name=".UbahEmail"
+            android:exported="false" />
+        <activity
+            android:name=".UbahPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Akun"
+            android:exported="false" />
+        <activity
+            android:name=".Dukungan"
+            android:exported="false" />
+        <activity
+            android:name=".TentangKami"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfil"
+            android:exported="false" />
+        <activity
+            android:name=".InformasiHotel"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKamarEkonomi"
+            android:exported="false" />
+        <activity
+            android:name=".KelasHotel"
+            android:exported="false" />
+        <activity
+            android:name=".SyaratDanKetentuanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Daftar"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91D8E1"
+    tools:context=".Reservasi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bgawan"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/kota">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/teksReservasiKamar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_Reservasi_Kamar"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/back_ic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Reservasi"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/teksReservasiKamar"
+        android:id="@+id/teks_nama_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans"
+        android:textSize="16sp"
+        android:text="Nama"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/teks_nama_reservasi"
+        android:id="@+id/rounded_nama_reservasi"
+        android:background="@drawable/bg_rounded_text">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama_reservasi"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/rounded_nama_reservasi"
+        android:id="@+id/teks_email_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/teks_email_reservasi"
+        android:id="@+id/rounded_email_reservasi"
+        android:background="@drawable/bg_rounded_text">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_reservasi"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/rounded_email_reservasi"
+        android:id="@+id/teks_nomor_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nomor Ponsel"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans"
+        />
+
+    <EditText
+        android:id="@+id/et_nomor_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/teks_nomor_reservasi"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_rounded_text"
+        android:paddingStart="15dp"
+        android:textColor="#242A31"
+        android:textSize="14sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/et_nomor_reservasi"
+        android:id="@+id/teks_alamat_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans"
+        />
+
+
+    <EditText
+        android:id="@+id/et_alamat_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@+id/teks_alamat_reservasi"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_rounded_text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="#242A31"
+        android:textSize="14sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/et_alamat_reservasi"
+        android:id="@+id/teks_jumlah_hari_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Hari"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/teks_jumlah_hari_reservasi"
+        android:id="@+id/rounded_jumlah_hari"
+        android:background="@drawable/bg_rounded_text">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teks_jumlah_hari"
+            android:text="1 Hari"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/rounded_jumlah_hari"
+        android:id="@+id/teksNomorKamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nomor Kamar"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/et_nomor_kamar_reservasi"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/teksNomorKamar"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_rounded_text"
+        android:paddingStart="15dp"
+        android:inputType="number"
+        android:textColor="#242A31"
+        android:textSize="14sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksNomorKamar"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/et_nomor_kamar_reservasi"
+        android:textColor="@color/bg_rounded_red"
+        android:fontFamily="@font/dm_sans"
+        android:text="Note : Pastikan bahwa kamar benar-benar kosong seperti keterangan yang ada di Halaman Booking Kamar. Agar mempercepat proses transaksi"/>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="bottom">
+
+        <Button
+            android:background="@drawable/bg_button_blue"
+            android:id="@+id/btnSimpanReservasi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Simpan"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kelas_kamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#00FF0000"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF0000"/>
+
+
+</RelativeLayout>

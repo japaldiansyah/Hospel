@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91D8E1"
+    tools:context=".SyaratDanKetentuanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bgawan"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/kota">
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/back_sdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_ic"/>
+
+    <RelativeLayout
+        android:id="@+id/ketentuan"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/sdk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dengan ini saya menyetujui semua syarat dan ketentuan yang sudah ditetapkan oleh hotel Hospel. Diantaranya adalah :"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_below="@id/sdk"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:text="> Menjaga privasi satu sama lain."/>
+
+        <TextView
+            android:layout_below="@+id/a1"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="> Pihak Hospel berhak mengetahui data diri dari pengguna."
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_syarat"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/ketentuan"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_button_green"
+        android:text="Setuju"
+        android:textSize="30sp"
+        android:fontFamily="@font/dm_sans"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/black"/>
+
+
+
+</RelativeLayout>
